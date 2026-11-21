@@ -1,36 +1,66 @@
 ---
-title: 光年声场资源站 | 小说·台本多角色配音模板与公版文本
+layout: default
+title: 光年声场资源站
+description: AI 多角色配音、小说转有声书、台本配音的免费模板与公版文本资源：台本模板、操作指南、公版文本清单。
+hero: true
+hero_title: 把文字，变成能听的故事
+hero_sub: 免费的台本模板、操作指南与公版文本清单，配合光年声场使用——粘贴文本，AI 自动分角色、分音色，生成有声书与台本配音。
 ---
 
-# 光年声场 · 资源站
+<section class="section" id="resources">
+  <h2 class="title">免费资源</h2>
+  <p class="lead">拿来就能用：模板直接套，指南照着做，公版文本放心改。</p>
+  <div class="cards">
+    <a class="card" href="/templates/script-template.html">
+      <div class="icon">🎙️</div>
+      <h3>广播剧 / 有声书台本模板</h3>
+      <p>角色表、场景标记、情绪提示的规范写法，附一个可直接套用的完整示例，粘贴进光年声场即可自动分角。</p>
+      <div class="go">打开模板 →</div>
+    </a>
+    <a class="card" href="/guides/novel-to-audiobook.html">
+      <div class="icon">📖</div>
+      <h3>小说改有声书操作指南</h3>
+      <p>从选文本、拆章节、分角色到导出成品的完整流程，含分角不准、长文本处理等常见问题的解法。</p>
+      <div class="go">查看指南 →</div>
+    </a>
+    <a class="card" href="/classics/">
+      <div class="icon">📚</div>
+      <h3>公版文本清单</h3>
+      <p>成语寓言、民间与儿童故事、聊斋短篇、古文小品——注明作者、卒年与底本，可放心改编制作。</p>
+      <div class="go">浏览清单 →</div>
+    </a>
+  </div>
+</section>
 
-把小说和台本，变成能听的多人有声剧。
+<section class="section">
+  <h2 class="title">适合谁</h2>
+  <p class="lead">只要你想把文字变成声音，这些资源都用得上。</p>
+  <div class="chips">
+    <span class="chip">✍️ 网文作者 · 把自己的小说做成有声版</span>
+    <span class="chip">🎧 有声书爱好者 · 追更不等录制</span>
+    <span class="chip">🎬 短视频 / 广播剧创作者 · 台本配音</span>
+    <span class="chip">👨‍👩‍👧 家长老师 · 给孩子讲故事、做课件</span>
+    <span class="chip">🏪 商家 · 门店介绍与宣传音频</span>
+  </div>
+</section>
 
-[光年声场](https://aishengchang.com) 是一款 AI 多角色配音工具：粘贴文本，AI 自动区分对白与旁白、识别角色、分配音色，生成可逐句试听的多人有声作品。
+<section class="section">
+  <h2 class="title">四步做出一条成品</h2>
+  <p class="lead">本站的模板和指南，都是围绕这条流程写的。</p>
+  <div class="steps">
+    <div class="step"><div class="num">1</div><h3>准备文本</h3><p>用台本模板整理格式，或从公版清单里挑一篇现成的。</p></div>
+    <div class="step"><div class="num">2</div><h3>粘贴进光年声场</h3><p>把文本粘贴到创作页，长文本按指南拆分章节。</p></div>
+    <div class="step"><div class="num">3</div><h3>AI 分角色配音色</h3><p>系统自动识别角色与对白，为每个角色分配不同音色。</p></div>
+    <div class="step"><div class="num">4</div><h3>生成并试听</h3><p>一键生成多角色有声成品，在线试听或导出使用。</p></div>
+  </div>
+</section>
 
-**[进入光年声场官网 →](https://aishengchang.com)**
-
-## 免费资源
-
-- **[广播剧 / 有声书台本模板](https://github.com/shengchang-dev/shengchang-dev.github.io/blob/main/templates/script-template.md)**：角色表、场景、对白与旁白的规范写法，可直接套用
-- **[小说改有声书操作指南](https://github.com/shengchang-dev/shengchang-dev.github.io/blob/main/guides/novel-to-audiobook.md)**：从文本整理、角色拆分到生成试听的完整步骤
-- **[公版文本清单](https://github.com/shengchang-dev/shengchang-dev.github.io/blob/main/classics/README.md)**：版权已过期的中外名著与民间故事，可合法改编与配音
-
-## 适合谁
-
-- 小说作者与网文创作者：把自己的作品做成有声书
-- 广播剧 / 有声剧团队：台本快速试演、角色音色预演
-- 老师与课程作者：讲稿转音频课程
-- 商家：门店介绍、产品讲解音频
-
-## 常用入口
-
-- [音色库](https://aishengchang.com/voices)：先听听有哪些声音
-- [使用指南](https://aishengchang.com/guides)：图文教程
-- [小说转有声书](https://aishengchang.com/solutions/novel-audiobook)
-- [台本配音](https://aishengchang.com/solutions/script-dubbing)
-- [价格](https://aishengchang.com/pricing)
-
----
-
-光年声场 · https://aishengchang.com
+<section class="section">
+  <div class="cta-band">
+    <div>
+      <h2>现在就把你的小说变成有声剧</h2>
+      <p>光年声场支持多角色、多音色自动配音，新用户有免费体验额度。</p>
+    </div>
+    <a class="btn" href="https://aishengchang.com">进入光年声场 →</a>
+  </div>
+</section>
