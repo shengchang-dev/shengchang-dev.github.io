@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title }} | 光年声场资源站</title>
+<meta name="description" content="{{ page.description | default: site.description }}">
+<style>
+:root{
+  --brand:#315bce; --brand-dark:#24479f; --brand-light:#e8eefc;
+  --ink:#1c2733; --muted:#5b6b7f; --bg:#f1f3f6; --card:#ffffff;
+  --line:#e2e8f0; --radius:16px;
+  --shadow:0 6px 24px rgba(28,39,51,.08);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Segoe UI",sans-serif;
+  font-size:16px;line-height:1.75;-webkit-font-smoothing:antialiased}
+a{color:var(--brand);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1020px;margin:0 auto;padding:0 20px}
+
+/* header */
+.site-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.site-header .wrap{display:flex;align-items:center;gap:18px;height:62px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px;color:var(--ink)}
+.logo:hover{text-decoration:none}
+.logo-badge{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--brand),#6d92ec);
+  display:flex;align-items:center;justify-content:center}
+.logo-badge svg{width:20px;height:20px}
+.logo small{font-weight:500;color:var(--muted);font-size:13px;margin-left:2px}
+.main-nav{margin-left:auto;display:flex;align-items:center;gap:22px;font-size:15px}
+.main-nav a{color:var(--ink)}
+.btn{display:inline-block;background:var(--brand);color:#fff!important;padding:9px 20px;border-radius:999px;
+  font-weight:600;font-size:15px;box-shadow:0 4px 14px rgba(49,91,206,.35)}
+.btn:hover{background:var(--brand-dark);text-decoration:none}
+.btn-ghost{background:#fff;color:var(--brand)!important;box-shadow:none;border:1px solid rgba(255,255,255,.7)}
+
+/* hero */
+.hero{background:linear-gradient(120deg,#24479f 0%,var(--brand) 45%,#6d92ec 100%);color:#fff;overflow:hidden;position:relative}
+.hero .wrap{padding:64px 20px 84px;position:relative;z-index:2}
+.hero h1{font-size:42px;line-height:1.25;margin:0 0 16px;letter-spacing:.5px}
+.hero p{font-size:18px;color:rgba(255,255,255,.88);max-width:640px;margin:0 0 30px}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+.hero .btn{padding:12px 28px;font-size:16px}
+.hero-rings{position:absolute;right:-70px;top:-70px;width:340px;height:340px;border-radius:50%;
+  border:56px solid rgba(255,255,255,.10);z-index:1}
+.hero-rings::after{content:"";position:absolute;inset:44px;border-radius:50%;border:34px solid rgba(255,255,255,.08)}
+.hero-wave{position:absolute;left:0;right:0;bottom:-1px;z-index:1}
+
+/* sections */
+.section{padding:52px 0 8px}
+.section h2.title{font-size:26px;margin:0 0 6px}
+.section p.lead{color:var(--muted);margin:0 0 26px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--card);border-radius:var(--radius);padding:26px 24px;box-shadow:var(--shadow);
+  border:1px solid var(--line);transition:transform .18s ease,box-shadow .18s ease;display:block;color:var(--ink)}
+.card:hover{transform:translateY(-4px);box-shadow:0 14px 34px rgba(28,39,51,.13);text-decoration:none}
+.card .icon{width:48px;height:48px;border-radius:12px;background:var(--brand-light);
+  display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:14px}
+.card h3{margin:0 0 8px;font-size:18px}
+.card p{margin:0;color:var(--muted);font-size:14.5px;line-height:1.65}
+.card .go{margin-top:14px;color:var(--brand);font-weight:600;font-size:14.5px}
+.chips{display:flex;flex-wrap:wrap;gap:12px}
+.chip{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:10px 20px;
+  font-size:15px;box-shadow:0 2px 8px rgba(28,39,51,.05)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.step{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow)}
+.step .num{width:32px;height:32px;border-radius:50%;background:var(--brand);color:#fff;font-weight:700;
+  display:flex;align-items:center;justify-content:center;margin-bottom:12px}
+.step h3{margin:0 0 6px;font-size:16.5px}
+.step p{margin:0;color:var(--muted);font-size:14.5px;line-height:1.65}
+.cta-band{background:linear-gradient(120deg,#24479f,var(--brand) 55%,#6d92ec);border-radius:20px;color:#fff;
+  padding:40px 36px;display:flex;align-items:center;gap:24px;flex-wrap:wrap;box-shadow:var(--shadow)}
+.cta-band h2{margin:0 0 6px;font-size:26px}
+.cta-band p{margin:0;color:rgba(255,255,255,.88)}
+.cta-band .btn{margin-left:auto;background:#fff;color:var(--brand)!important}
+
+/* content pages */
+.page-head{padding:44px 0 6px}
+.page-head h1{font-size:32px;margin:0;line-height:1.35}
+.content{padding:18px 0 10px}
+.content h2{font-size:22px;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--brand);line-height:1.4}
+.content h3{font-size:18px;margin:24px 0 8px}
+.content p{margin:10px 0}
+.content ul,.content ol{margin:10px 0;padding-left:24px}
+.content li{margin:5px 0}
+.content table{border-collapse:collapse;width:100%;margin:16px 0;background:#fff;border-radius:12px;overflow:hidden;box-shadow:var(--shadow)}
+.content th{background:var(--brand-light);text-align:left;padding:10px 14px;font-size:15px}
+.content td{padding:10px 14px;border-top:1px solid var(--line);font-size:15px}
+.content code{background:#eef1f6;border-radius:6px;padding:1px 6px;font-size:.92em}
+.content pre{background:#1c2733;color:#dbe4f0;border-radius:12px;padding:16px 18px;overflow-x:auto}
+.content pre code{background:transparent;color:inherit;padding:0}
+.content blockquote{margin:14px 0;padding:12px 18px;background:var(--brand-light);border-radius:10px;color:#33475e}
+.content blockquote p{margin:4px 0}
+.content hr{border:none;border-top:1px solid var(--line);margin:28px 0}
+
+/* footer */
+.site-footer{margin-top:64px;background:#1c2733;color:#aebdd0}
+.site-footer .wrap{padding:40px 20px 30px;display:flex;gap:40px;flex-wrap:wrap}
+.site-footer h4{color:#fff;margin:0 0 12px;font-size:16px}
+.site-footer a{color:#aebdd0}
+.site-footer ul{list-style:none;margin:0;padding:0}
+.site-footer li{margin:6px 0;font-size:14.5px}
+.footer-brand{max-width:340px;font-size:14.5px;line-height:1.7}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.12);padding:16px 0 22px;font-size:13.5px;color:#8496ad}
+.footer-bottom .wrap{padding:0 20px;display:block}
+
+@media (max-width:760px){
+  .hero h1{font-size:31px}
+  .hero .wrap{padding:44px 20px 64px}
+  .cards,.steps{grid-template-columns:1fr}
+  .main-nav a:not(.btn){display:none}
+  .cta-band .btn{margin-left:0}
+  .page-head h1{font-size:26px}
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="{{ '/' | relative_url }}">
+      <span class="logo-badge"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M4 10v4"/><path d="M8.5 7v10"/><path d="M13 4v16"/><path d="M17.5 8v8"/><path d="M21 10v4"/></svg></span>
+      光年声场<small>资源站</small>
+    </a>
+    <nav class="main-nav">
+      <a href="{{ '/templates/script-template.html' | relative_url }}">台本模板</a>
+      <a href="{{ '/guides/novel-to-audiobook.html' | relative_url }}">操作指南</a>
+      <a href="{{ '/classics/' | relative_url }}">公版清单</a>
+      <a class="btn" href="https://aishengchang.com">进入官网</a>
+    </nav>
+  </div>
+</header>
+
+{% if page.hero %}
+<section class="hero">
+  <div class="hero-rings"></div>
+  <div class="wrap">
+    <h1>{{ page.hero_title }}</h1>
+    <p>{{ page.hero_sub }}</p>
+    <div class="hero-actions">
+      <a class="btn btn-ghost" href="https://aishengchang.com">免费开始创作</a>
+      <a class="btn" href="#resources" style="background:rgba(255,255,255,.16);box-shadow:none;border:1px solid rgba(255,255,255,.55)">浏览免费资源 ↓</a>
+    </div>
+  </div>
+  <svg class="hero-wave" viewBox="0 0 1440 56" preserveAspectRatio="none" height="40" width="100%"><path d="M0,32 C240,56 480,4 720,16 C960,28 1200,52 1440,28 L1440,56 L0,56 Z" fill="#f1f3f6"/></svg>
+</section>
+{% else %}
+<div class="wrap page-head"><h1>{{ page.title }}</h1></div>
+{% endif %}
+
+<main class="wrap {% unless page.hero %}content{% endunless %}">
+{{ content }}
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-brand">
+      <h4>光年声场 · 资源站</h4>
+      免费的创作模板、操作指南与公版文本清单，配合光年声场 AI 多角色配音使用：粘贴文本，自动分角色、分音色，生成能听的有声书与台本配音。
+    </div>
+    <div>
+      <h4>本站资源</h4>
+      <ul>
+        <li><a href="{{ '/templates/script-template.html' | relative_url }}">广播剧 / 有声书台本模板</a></li>
+        <li><a href="{{ '/guides/novel-to-audiobook.html' | relative_url }}">小说改有声书操作指南</a></li>
+        <li><a href="{{ '/classics/' | relative_url }}">公版文本清单</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>光年声场官网</h4>
+      <ul>
+        <li><a href="https://aishengchang.com/voices">音色库</a></li>
+        <li><a href="https://aishengchang.com/guides">使用指南</a></li>
+        <li><a href="https://aishengchang.com/solutions">解决方案</a></li>
+        <li><a href="https://aishengchang.com/pricing">价格</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="wrap">© 青岛光年声场软件智能科技有限公司 · 本站模板与指南可免费用于个人与商业创作，公版文本的版权说明见清单页。</div>
+  </div>
+</footer>
+</body>
+</html>
