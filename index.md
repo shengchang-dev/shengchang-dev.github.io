@@ -1,39 +1,39 @@
 ---
 layout: default
 title: 光年声场资源站
-description: AI 多角色配音、小说转有声书、台本配音的免费模板与公版文本资源：台本模板、操作指南、公版文本清单。
+description: 有声制作分类收录站：开源 TTS 分类排名（24 个项目实查）、在线语音服务收录、公版文本来源站收录与公版文本清单，配合光年声场做多人有声书。
 hero: true
 hero_title: 把文字，变成能听的故事
-hero_sub: 免费的台本模板、操作指南与公版文本清单，配合光年声场使用——粘贴文本，AI 自动分角色、分音色，生成有声书与台本配音。
+hero_sub: 开源 TTS 分类排名、在线服务与公版文本来源的分类收录，数据逐条实查——选对工具和文本，再用光年声场粘贴文本、AI 分角色配音，生成多人有声书。
 ---
 
 <section class="section" id="resources">
-  <h2 class="title">免费资源</h2>
-  <p class="lead">拿来就能用：模板直接套，指南照着做，公版文本放心改。</p>
+  <h2 class="title">分类收录</h2>
+  <p class="lead">先调研、再收录：每个条目的数据都查过出处，坑都标在明处。</p>
   <div class="cards">
-    <a class="card" href="/templates/script-template.html">
-      <div class="icon">🎙️</div>
-      <h3>广播剧 / 有声书台本模板</h3>
-      <p>角色表、场景标记、情绪提示的规范写法，附一个可直接套用的完整示例，粘贴进光年声场即可自动分角。</p>
-      <div class="go">打开模板 →</div>
+    <a class="card" href="/collections/tts-tools.html">
+      <div class="icon">🏆</div>
+      <h3>开源 TTS 分类排名</h3>
+      <p>24 个开源语音合成项目按六大用途分类排名：音色克隆、多人对话、成品工具、端侧部署……星标、协议、更新时间全部实查，停更与协议坑逐个标注。</p>
+      <div class="go">查看排名 →</div>
     </a>
-    <a class="card" href="/guides/novel-to-audiobook.html">
-      <div class="icon">📖</div>
-      <h3>小说改有声书操作指南</h3>
-      <p>从选文本、拆章节、分角色到导出成品的完整流程，含分角不准、长文本处理等常见问题的解法。</p>
-      <div class="go">查看指南 →</div>
+    <a class="card" href="/collections/online-tts.html">
+      <div class="icon">☁️</div>
+      <h3>在线语音服务分类收录</h3>
+      <p>云厂商语音 API 与开箱即用的成品工具分开收录，按「开发者集成 / 创作者做成品 / 个人自听」对号入座。</p>
+      <div class="go">查看收录 →</div>
+    </a>
+    <a class="card" href="/collections/text-sources.html">
+      <div class="icon">🔎</div>
+      <h3>公版文本来源站分类收录</h3>
+      <p>12 个可靠文本来源：维基文库、ctext、书格、Project Gutenberg……各自强项与版权注意写清，做有声书先来这里找底本。</p>
+      <div class="go">查看收录 →</div>
     </a>
     <a class="card" href="/classics/">
       <div class="icon">📚</div>
       <h3>公版文本清单</h3>
-      <p>成语寓言、民间与儿童故事、聊斋短篇、古文小品——注明作者、卒年与底本，可放心改编制作。</p>
+      <p>可合法改编的篇目级清单：成语寓言、聊斋短篇、近现代名家，逐条标注作者卒年与版权状态，含沈从文等常见误判提醒。</p>
       <div class="go">浏览清单 →</div>
-    </a>
-    <a class="card" href="/collections/tts-tools.html">
-      <div class="icon">🧭</div>
-      <h3>开源 TTS 工具选型指南</h3>
-      <p>12 个主流开源语音合成项目按场景分类对比：克隆音色、对话短剧、整本有声书、团队集成，附协议风险与停更提示。</p>
-      <div class="go">查看指南 →</div>
     </a>
   </div>
 </section>
@@ -52,9 +52,9 @@ hero_sub: 免费的台本模板、操作指南与公版文本清单，配合光�
 
 <section class="section">
   <h2 class="title">四步做出一条成品</h2>
-  <p class="lead">本站的模板和指南，都是围绕这条流程写的。</p>
+  <p class="lead">本站的收录，都是围绕这条流程做的。</p>
   <div class="steps">
-    <div class="step"><div class="num">1</div><h3>准备文本</h3><p>用台本模板整理格式，或从公版清单里挑一篇现成的。</p></div>
+    <div class="step"><div class="num">1</div><h3>准备文本</h3><p>从公版清单里挑一篇现成的，或按来源站收录找底本、校对。</p></div>
     <div class="step"><div class="num">2</div><h3>粘贴进光年声场</h3><p>把文本粘贴到创作页，长文本按指南拆分章节。</p></div>
     <div class="step"><div class="num">3</div><h3>AI 分角色配音色</h3><p>系统自动识别角色与对白，为每个角色分配不同音色。</p></div>
     <div class="step"><div class="num">4</div><h3>生成并试听</h3><p>一键生成多角色有声成品，在线试听或导出使用。</p></div>
