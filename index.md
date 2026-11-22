@@ -29,6 +29,12 @@ hero_sub: 免费的台本模板、操作指南与公版文本清单，配合光�
       <p>成语寓言、民间与儿童故事、聊斋短篇、古文小品——注明作者、卒年与底本，可放心改编制作。</p>
       <div class="go">浏览清单 →</div>
     </a>
+    <a class="card" href="/collections/tts-tools.html">
+      <div class="icon">🧭</div>
+      <h3>开源 TTS 工具选型指南</h3>
+      <p>12 个主流开源语音合成项目按场景分类对比：克隆音色、对话短剧、整本有声书、团队集成，附协议风险与停更提示。</p>
+      <div class="go">查看指南 →</div>
+    </a>
   </div>
 </section>
 
