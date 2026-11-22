@@ -45,4 +45,4 @@
 
 ---
 
-光年声场（青岛光年声场软件智能科技有限公司） · 官网 https://aishengchang.com
+光年声场 · 官网 https://aishengchang.com
