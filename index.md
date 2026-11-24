@@ -1,10 +1,10 @@
 ---
 layout: default
 title: 光年声场资源站
-description: 有声制作分类收录站：开源 TTS 分类排名（24 个项目实查）、在线语音服务收录、公版文本来源站收录与公版文本清单，配合光年声场做多人有声书。
+description: 有声制作分类收录站：开源 TTS 分类排名（24 个项目实查）、开源 ASR 语音识别排名、在线语音服务收录、公版文本来源站收录与公版文本清单，配合光年声场做多人有声书与录音转文字。
 hero: true
 hero_title: 把文字，变成能听的故事
-hero_sub: 开源 TTS 分类排名、在线服务与公版文本来源的分类收录，数据逐条实查——选对工具和文本，再用光年声场粘贴文本、AI 分角色配音，生成多人有声书。
+hero_sub: 开源 TTS 与 ASR 分类排名、在线服务与公版文本来源的分类收录，数据逐条实查——选对工具和文本，再用光年声场粘贴文本、AI 分角色配音，生成多人有声书；录音也能转成文字接着配。
 ---
 
 <section class="section" id="resources">
@@ -15,6 +15,12 @@ hero_sub: 开源 TTS 分类排名、在线服务与公版文本来源的分类�
       <div class="icon">🏆</div>
       <h3>开源 TTS 分类排名</h3>
       <p>24 个开源语音合成项目按六大用途分类排名：音色克隆、多人对话、成品工具、端侧部署……星标、协议、更新时间全部实查，停更与协议坑逐个标注。</p>
+      <div class="go">查看排名 →</div>
+    </a>
+    <a class="card" href="/collections/asr-tools.html">
+      <div class="icon">🎙️</div>
+      <h3>开源 ASR 分类排名</h3>
+      <p>12 个开源语音识别项目分四类排名：Whisper 系通用转写、中文与方言、说话人分离与字幕对齐、端侧与实时。录音先转文字，再进配音流程。</p>
       <div class="go">查看排名 →</div>
     </a>
     <a class="card" href="/collections/online-tts.html">
@@ -47,6 +53,7 @@ hero_sub: 开源 TTS 分类排名、在线服务与公版文本来源的分类�
     <span class="chip">🎬 短视频 / 广播剧创作者 · 台本配音</span>
     <span class="chip">👨‍👩‍👧 家长老师 · 给孩子讲故事、做课件</span>
     <span class="chip">🏪 商家 · 门店介绍与宣传音频</span>
+    <span class="chip">🎙️ 播客 / 访谈整理 · 录音转文字、转完再配音</span>
   </div>
 </section>
 
